@@ -1,0 +1,102 @@
+.veterans {
+    background: #e5e5e5;
+    padding: 150px 0 100px;
+    margin-top: 100px;
+    box-shadow: -100px 0 200px rgba(0,0,0,0.5);
+  
+    .veteransItems {
+      position: relative;
+  
+      .search {
+        //background: #221f23;
+        background: rgb(25, 25, 25);
+        position: absolute;
+        top: -230px;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        padding: 30px 300px;
+        border-radius: 10px;
+  
+        @media only screen and (max-width: 1400px){
+          padding: 30px 150px;
+        }
+        @media only screen and (max-width: 1000px){
+          padding: 30px 50px;
+        }
+        @media only screen and (max-width: 700px){
+          padding: 30px 20px;
+        }
+  
+        .title {
+          text-transform: uppercase;
+          font-size: 30px;
+          color: white;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+  
+        .inputBlock {
+          position: relative;
+  
+          .lupa {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 30px;
+          }
+
+          .searchInput {
+            width: 100%;
+            font-size: 20px;
+            background: white;
+            padding: 10px 70px;
+            border-radius: 10px;
+          }
+
+          .remove {
+            position: absolute;
+            top: 8px;
+            right: 20px;
+            background: none;
+            cursor: pointer;
+            font-size: 30px;
+            border: none;
+          }
+        }
+      }
+
+      .veteranCards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .empty {
+        padding: 165px 0;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+    .pagination {
+      text-align: center;
+
+      .paginationItem {
+        background: none;
+        border: none;
+        margin-top: 50px;
+        font-size: 30px;
+        padding: 7px 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      
+      .active {
+        background: #333;
+        color: white;
+      }
+    }
+  }

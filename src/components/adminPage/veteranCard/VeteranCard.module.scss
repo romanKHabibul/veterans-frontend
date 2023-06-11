@@ -1,0 +1,46 @@
+.card {
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 400px;
+    border: 1px solid white;
+    padding: 50px 20px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    .number {
+      font-size: 20px;
+    }
+    .date {
+      margin-bottom: 20px;
+    }
+    .np {
+      margin-bottom: 10px;
+    }
+    .dates {
+      margin-bottom: 20px;
+    }
+    .text {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background: transparent;
+      color: white;
+      min-height: 200px;
+      border: none;
+      font-size: 16px;
+      padding: 10px;
+      flex: 1;
+    }
+    .remove {
+      display: block;
+      width: 100%;
+      text-transform: uppercase;
+      margin: 20px auto 0;
+      padding: 5px;
+      &:hover {
+        cursor: pointer;
+        background: transparent;
+        outline: 1px solid white;
+        color: white;
+      }
+    }
+  }

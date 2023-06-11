@@ -1,0 +1,20 @@
+.form {
+    .input {
+      width: 500px;
+      padding: 5px 30px;
+      font-size: 20px;
+    }
+    .submit {
+      text-transform: uppercase;
+      background: none;
+      border: none;
+      color: white;
+      margin-right: 0;
+      font-size: 15px;
+      margin-top: 10px;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+  }

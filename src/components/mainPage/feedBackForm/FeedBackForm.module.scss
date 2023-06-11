@@ -1,0 +1,31 @@
+.title {
+    margin-bottom: 10px;
+  }
+
+  .feedbackInput {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    padding: 5px 10px;
+
+    @media only screen and (max-width: 500px){
+        max-width: 350px;
+    }
+    @media only screen and (max-width: 350px){
+        max-width: 300px;
+    }
+  }
+
+  .submit {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    color: white;
+    &:hover {
+      opacity: 0.8;
+    }
+  }

@@ -1,0 +1,61 @@
+.history {
+    background: #f3f3f3;
+
+    .historyItems {
+        padding: 100px 150px;
+        text-align: center;
+
+        @media only screen and (max-width: 1200px) and (min-width: 1000px){
+            padding: 100px;
+        }
+        @media only screen and (max-width: 1000px) and (min-width: 800px){
+            padding: 100px 50px;
+        }
+        @media only screen and (max-width: 800px) and (min-width: 700px){
+            padding: 100px 25px;
+        }
+
+        .title {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .subtext {
+            max-width: 1000px;
+            margin: 0 auto 20px;
+            &::after {
+            content: "";
+            display: block;
+            background: #C1A886;
+            height: 2px;
+            width: 500px;
+            margin: 50px auto 50px;
+            }
+        }
+
+        .text {
+            font-size: 22px;
+            letter-spacing: 1px;
+            line-height: 30px;
+            margin: 50px 0;
+            text-align: justify;
+        }
+
+        }
+        .nav {
+        position: fixed;
+        top: 50%;
+        right: 100px;
+        @media screen and (max-width: 1600px){
+            display: none;
+        }
+
+        li {
+            font-size: 20px;
+            margin-bottom: 5px;
+            a {
+            color: black;
+            }
+        }
+    }
+}

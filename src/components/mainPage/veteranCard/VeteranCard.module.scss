@@ -1,0 +1,82 @@
+.card {
+  width: 450px;
+  background: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+  transition: transform 0.1s ease-in-out;
+  color: black;
+  border-radius: 10px;
+  position: relative;
+
+  @media only screen and (max-width: 450px) and (min-width: 400px){
+    width: 400px;
+  }
+  @media only screen and (max-width: 400px) and (min-width: 350px){
+    width: 350px;
+  }
+
+  &:hover {
+    transform: translate(-10px, -10px);
+    cursor: pointer;
+  }
+
+  .veteranImg {
+    display: block;
+    width: 170px;
+    height: 230px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .inf {
+    padding: 20px 30px;
+
+    .title {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    .date {
+      margin-bottom: 5px;
+    }
+
+    .more {
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .change {
+      background: none;
+      border: none;
+      font-size: 40px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5
+      }
+    }
+  }
+
+  .addFile {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+  }
+
+  .submitAdd {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    text-transform: uppercase;
+    padding: 7px 20px;
+    cursor: pointer;
+  }
+}

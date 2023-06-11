@@ -1,0 +1,89 @@
+.form {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width: 500px;
+  background: #DFDFDF;
+  padding: 50px 20px;
+  border-radius: 10px;
+
+  @media only screen and (max-width: 600px) and (min-width: 500px){
+    width: 450px;
+  }
+  @media only screen and (max-width: 500px) and (min-width: 450px){
+    width: 400px;
+  }
+  @media only screen and (max-width: 450px) and (min-width: 400px){
+    width: 370px;
+  }
+  @media only screen and (max-width: 400px) and (min-width: 350px){
+    width: 330px;
+  }
+  @media only screen and (max-width: 350px){
+    width: 300px;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .subtitle {
+    font-style: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .authInput {
+    padding: 5px 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .redirect {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 450px){
+      display: block;
+    }
+
+    .submit,
+    .back {
+      padding: 7px 30px;
+      border-radius: 30px;
+      font-size: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      background: #333;
+      color: white;
+
+      @media only screen and (max-width: 450px){
+        margin-bottom: 10px;
+      }
+
+      &:hover {
+        background: transparent;
+        color: #333;
+        outline: 1px solid #333;
+      }
+    }
+  }
+}

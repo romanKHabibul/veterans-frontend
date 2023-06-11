@@ -1,0 +1,144 @@
+.prev {
+    background: white;
+    .prevItems {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 5px;
+      .left {
+        text-align: center;
+        .title {
+          font-size: 30px;
+          color: #c1a886;
+          font-family: 'Playfair Display', serif;
+          font-weight: 400;
+          letter-spacing: 1px;
+  
+          @media only screen and (max-width: 900px) and (min-width: 700px){
+            font-size: 25px;
+          }
+          @media only screen and (max-width: 700px) and (min-width: 500px){
+            font-size: 20px
+          }
+          @media only screen and (max-width: 500px){
+            font-size: 15px
+          }
+        }
+        .subtitle {
+          font-size: 20px;
+          color: #c1a886;
+          font-family: 'Playfair Display', serif;
+          font-weight: 400;
+          overflow: hidden;
+          &::before {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 100%;
+            background: #c1a886;
+            position: relative;
+            vertical-align: middle;
+            margin-left: -100%;
+            left: -14px;
+          }
+          &::after {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 100%;
+            background: #c1a886;
+            position: relative;
+            vertical-align: middle;
+            margin-right: -100%;
+            right: -14px;
+          }
+  
+          @media only screen and (max-width: 900px) and (min-width: 700px){
+            font-size: 17px;
+          }
+          @media only screen and (max-width: 700px) and (min-width: 500px){
+            font-size: 15px
+          }
+          @media only screen and (max-width: 500px){
+            font-size: 13px
+          }
+        }
+      }
+      .right {
+        .nav {
+          background: none;
+          border: none;
+          cursor: pointer;
+          font-family: 'Playfair Display', serif;
+          font-size: 25px;
+          text-transform: uppercase;
+          margin-left: 15px;
+          padding-left: 15px;
+
+          &:hover {
+            opacity: 0.7;
+            transition: 0.1s ease;
+          }
+  
+          @media only screen and (max-width: 900px){
+            font-size: 17px;
+          }
+          @media only screen and (max-width: 800px){
+            display: block;
+          }
+        }
+      }
+    }
+    .active {
+      padding-top: 90px;
+    }
+  }
+  .logo {
+    text-align: center;
+    padding: 173px 5px 164px;
+    background: url("./../../../../public/image/main2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .logoTitle {
+      font-size: 60px;
+      font-family: 'Playfair Display', serif;
+      max-width: 900px;
+      margin: 0 auto;
+      color: white;
+      font-weight: 500;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #c1a886;
+        margin-bottom: 60px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #c1a886;
+        margin-top: 60px;
+      }
+  
+      @media only screen and (max-width: 900px) and (min-width: 700px){
+        font-size: 45px;
+      }
+      @media only screen and (max-width: 700px) and (min-width: 500px){
+        font-size: 35px
+      }
+      @media only screen and (max-width: 500px){
+        font-size: 30px
+      }
+    }
+  }
+  .active {
+    padding-top: 90px;
+  }
