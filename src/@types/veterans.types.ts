@@ -6,6 +6,6 @@ export interface IVeteran extends IBase {
     patronomyc: string;
     dates: string;
     grades: string;
-    description: string;
+    description?: string;
     imagePath: string;
 }

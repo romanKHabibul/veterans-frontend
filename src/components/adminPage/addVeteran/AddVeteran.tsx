@@ -14,7 +14,7 @@ const AddVeteran = () => {
     const submit: SubmitHandler<IVeteran> = (data) => {
         if(data.description == ""){
             const {description, ...rest} = data
-            //@ts-ignore
+            
             addVeteran(rest)
             reseting()
         } else {
