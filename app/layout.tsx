@@ -10,7 +10,7 @@ import { Metadata } from 'next'
 
 export const mont = Montserrat({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: 'Ветераны',
   description: 'Список ветеранов из города Златоуст Челябинской области, принимавшие участие в Сталинградской битве',
 }
