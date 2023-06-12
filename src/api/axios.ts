@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_URL = "http://localhost:3000/api"
+export const API_URL = "https://veterans-backend.onrender.com/api"
 
 export const axiosConfig = axios.create({
     baseURL: API_URL,
