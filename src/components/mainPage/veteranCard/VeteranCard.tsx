@@ -21,11 +21,11 @@ const VeteranCard: FC<{
 
     const cardAnimation = {
         hidden: {
-            x: -100,
+            y: 100,
             opacity: 0
         },
         visible: (custom: number) => ({
-            x: 0,
+            y: 0,
             opacity: 1,
         })
     }
